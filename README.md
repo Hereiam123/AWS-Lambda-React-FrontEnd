@@ -1,3 +1,7 @@
+## Config
+
+You will have to create your own S3, Cognito, API Gateway sources in AWS, and provide a Config file for AWS Amplify
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
