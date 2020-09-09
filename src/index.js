@@ -5,7 +5,12 @@ import App from "./App";
 import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import { Amplify } from "aws-amplify";
+import * as Sentry from "@sentry/react";
+import { Integrations } from "@sentry/tracing";
+import { initSentry } from "./libs/errorLib";
 import config from "./config";
+
+initSentry();
 
 Amplify.configure({
   Auth: {
